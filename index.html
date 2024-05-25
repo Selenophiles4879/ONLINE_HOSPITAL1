@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="signup.js"></script>
+    <title>Login Page of Online-Hospital</title>
+</head>
+<body background="hospital1.jpg">
+    <header><h1><img src="heartpng1.png" alt="Heart" id="heart">Online_H<img src="plus2png.png" alt="cross" id="cross">spital</h1>
+        <h2 class="head">Your health is our priority!</h2>
+    </header>
+    <form id="myForm" onsubmit="validateLogin(); return false;">
+        <h2><b><font color="white">Welcome to the Login_page 
+      of the Online_Hospital</font></b></h2>
+        <label for="username"><font color="lime"><b>Username:</b></label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password"><b>Password:</b></font></label>
+        <input type="password" id="password" name="password" required><br>
+
+        <!--<input type="button" value="Save Locally" onclick="saveLocally()">
+        <input type="button" value="Retrieve Locally" onclick="retrieveLocally()">-->
+        <!--<input type="button" value="Delete Locally" onclick="deleteLocally()">-->
+        <input type="submit" value="Login">
+        <input type="button" value="Sign Up" onclick="sign()">
+    </form>
+</body>
+</html>
