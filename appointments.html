@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointments - Online Hospital</title>
+    <link rel="stylesheet" type="text/css" href="appointment.css">
+    <link rel="javascript" type="text/javascript" href="appointment.js">
+    <script type="text/javascript">
+        function msg(){
+            confirm("Are you sure,you want to submit!");
+        }
+        function msg2(){
+             var paymentwin=window.open("payment.html","payment_parent","width=800px,height=400px,top=100px,left=400px");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Header content and navigation links -->
+    </header>
+        <nav>
+            <ul>
+                <li id="hom"><a href="Online_Hospital.html"><img src="homeicon1.jpg" alt="Home icon" id="homeicon"></a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointment</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <section id="appointments">
+    	<!--<table border="solid" cellspacing="0">-->
+                   <h2>Appointment Form</h2>
+        <p>Schedule your appointment with us. Please fill out the form below:</p>
+        <!-- Appointment Form -->
+        <form id="form2" onsubmit="msg2()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="age">Age:</label>
+            <input type="number" name="num" id="num" required>
+            <label for="gender">Select your gender:</label>
+            <input type="radio" name="gender" required>Male
+            <input type="radio" name="gender" required>Female
+            <input type="radio" name="gender"required>others
+            <label for="number">Select dialling code:</label>
+            <select id="codeselect">
+                <option value="none"required>Choose from here</option>
+                <option value="+93"required>Afghanistan +93  AF / AFG</option>
+                <option value="+355"required>Albania +355 AL / ALB</option>
+                <option value="+213"required>Algeria +213 DZ / DZA</option>
+                <option value="+376"required>Andorra +376 AD / AND</option>
+                <option value="+244"required>Angola  +244 AO / AGO</option>
+                <option value="+1-264"required>Anguilla +1-264  AI / AIA</option>
+                <option value="+672"required>Antarctica  +672 AQ / ATA</option>
+                <option value="+1-268"required>Antigua and Barbuda +1-268  AG / ATG</option>
+                <option value="+54"required>Argentina  +54  AR / ARG</option>
+                <option value="+374"required>Armenia +374 AM / ARM</option>
+                <option value="+297"required>Aruba +297 AW / ABW</option>
+                <option value="+61"required>Australia +61  AU / AUS</option>
+                <option value="+43"required>Austria +43  AT / AUT</option>
+                <option value="+994"required>Azerbaijan +994 AZ / AZE</option>
+                <option value="+1-242"required>Bahamas +1-242   BS / BHS</option>
+                <option value="+973"required>Bahrain +973 BH / BHR</option>
+                <option value="+880"required>Bangladesh +880 BD / BGD</option>
+                <option value="+375"required>Belarus +375 BY / BLR</option>
+                <option value="+32"required>Belgium +32  BE / BEL</option>
+                <option value="+501"required>Belize  +501 BZ / BLZ</option>
+                <option value="+229"required>Benin +229 BJ / BEN</option>
+                <option value="+1-441"required>Bermuda +1-441   BM / BMU</option>
+                <option value="+975"required>Bhutan +975 BT / BTN</option>
+                <option value="+591"required>Bolivia +591 BO / BOL</option>
+                <option value="+387"required>Bosnia and Herzegovina +387 BA / BIH</option>
+                <option value="+267"required>Botswana +267 BW / BWA</option>
+                <option value="+55"required>Brazil +55  BR / BRA</option>
+                <option value="+246"required>British Indian Ocean Territory +246 IO / IOT</option>
+                <option value="+1-284"required>British Virgin Islands +1-284   VG / VGB</option>
+                <option value="+673"required>Brunei +673 BN / BRN</option>
+                <option value="+359"required>Bulgaria +359 BG / BGR</option>
+                <option value="+257"required>Burundi +257 BI / BDI</option>
+                <option value="+855"required>Cambodia +855 KH / KHM</option>
+                <option value="+237"required>Cameroon +237 CM / CMR</option>
+                <option value="+1"required>Canada +1 CA / CAN</option>
+                <option value="+238"required>Cape Verde +238 CV / CPV</option>
+                <option value="+1-345"required>Cayman Islands +1-345   KY / CYM</option>
+                <option value="+236"required>Central African Republic +236 CF / CAF</option>
+                <option value="+235"required>Chad +235 TD / TCD</option>
+                <option value="+56"required>Chile +56  CL / CHL</option>
+                <option value="+86"required>China +86  CN / CHN</option>
+                <option value="+61"required>Christmas Island +61  CX / CXR</option>
+                <option value="+61"required>Cocos Islands +61  CC / CCK</option>
+                <option value="+57"required>Colombia +57  CO / COL</option>
+                <option value="+269"required>Comoros +269 KM / COM</option>
+                <option value="+682"required>Cook Islands +682 CK / COK</option>
+                <option value="+506"required>Costa Rica +506 CR / CRI</option>
+                <option value="+385"required>Croatia +385 HR / HRV</option>
+                <option value="+53"required>Cuba +53  CU / CUB</option>
+                <option value="+599"required>Curacao +599 CW / CUW</option>
+                <option value="+357"required>Cyprus +357 CY / CYP</option>
+                <option value="+420"required>Czech Republic +420 CZ / CZE</option>
+                <option value="+243"required>Democratic Republic of the Congo +243 CD / COD</option>
+                <option value="+45"required>Denmark +45  DK / DNK</option>
+                <option value="+253"required>Djibouti +253 DJ / DJI</option>
+                <option value="+1-767"required>Dominica +1-767   DM / DMA</option>
+                <option value="+1-809"required>Dominican Republic +1-809 DO / DOM</option>
+                <option value="+1-829"required>Dominican Republic +1-829 DO / DOM</option>
+                <option value="+1-849"required>Dominican Republic +1-849 DO / DOM</option>
+                <option value="+670">requiredEast Timor +670 TL / TLS</option>
+                <option value="+593"required>Ecuador +593 EC / ECU</option>
+                <option value="+20"required>Egypt +20  EG / EGY</option>
+                <option value="+503"required>El Salvador +503 SV / SLV</option>
+                <option value="+240"required>Equatorial Guinea  +240 GQ / GNQ</option>
+                <option value="+291"required>Eritrea +291 ER / ERI</option>
+                <option value="+372"required>Estonia +372 EE / EST</option>
+                <option value="+251"required>Ethiopia +251 ET / ETH</option>
+                <option value="+500"required>Falkland Islands +500 FK / FLK</option>
+                <option value="+298"required>Faroe Islands +298 FO / FRO</option>
+                <option value="+679"required>Fiji +679 FJ / FJI</option>
+                <option value="+358"required>Finland +358 FI / FIN</option>
+                <option value="+33"required>France +33  FR / FRA</option>
+                <option value="+689"required>French Polynesia +689 PF / </option>
+                <option value="+220"required>Gambia +220 GM / GMB</option>
+                <option value="+995"required>Georgia +995 GE / GEO</option>
+                <option value="+49"required>Germany +49  DE / DEU</option>
+                <option value="+233"required>Ghana 233 GH / GHA</option>
+                <option value="+350"required>Gibraltar +350 GI / GIB</option>
+                <option value="+30"required>Greeceb +30  GR / GRC</option>
+                <option value="+1-473"required>Grenada +1-473   GD / GRD</option>
+                <option value="+1-671"required>Guam +1-671   GU / GUM</option>
+                <option value="+502"required>Guatemala +502 GT / GTM</option>
+                <option value="+245"required>Guinea-Bissau +245 GW / GNB</option>
+                <option value="+592"required>Guyana +592 GY / GUY</option>
+                <option value="+509"required>Haiti +509 HT / HTI</option>
+                <option value="+504"required>Honduras +504 HN / HND</option>
+                <option value="+852"required>Hong Kong +852 HK / HKG</option>
+                <option value="+36"required>Hungary +36  HU / HUN</option>
+                <option value="+354"required>Iceland +354 IS / ISL</option>
+                <option value="+91"required>India +91  IN / IND</option>
+                <option value="+62"required>Indonesia +62  ID / IDN</option>
+                <option value="+98"required>Iran +98  IR / IRN</option>
+                <option value="+964"required>Iraq +964 IQ / IRQ</option>
+                <option value="+44-1624"required>Isle of Man +44-1624 IM / IMN</option>
+                <option value="+972"required>Israel +972 IL / ISR</option>
+                <option value="+225"required>Ivory Coast +225 CI / CIV</option>
+                <option value="+1=876"required>Jamaica +1-876   JM / JAM</option>
+                <option value="+81"required>Japan +81  JP / JPN</option>
+                <option value="+44-1534"required>Jersey +44-1534 JE / JEY</option>
+                <option value="+7"required>Kazakhstan +7   KZ / KAZ</option>
+                <option value="+254"required>Kenya +254 KE / KEN</option>
+                <option value="+686"required>Kiribati +686 KI / KIR</option>
+                <option value="+383"required>Kosovo +383 XK / XKX</option>
+                <option value="+965"required>Kuwait +965 KW / KWT</option>
+                <option value="+996"required>Kyrgyzstan +996 KG / KGZ</option>
+                <option value="+856"required>Laos +856 LA / LAO</option>
+                <option value="+371"required>Latvia +371 LV / LVA</option>
+                <option value="+266"required>Lesotho +266 LS / LSO</option>
+                <option value="+231"required>Liberia +231 LR / LBR</option>
+                <option value="+218"required>Libya +218 LY / LBY</option>
+                <option value="+423"required>Liechtenstein +423 LI / LIE</option>
+                <option value="+370"required>Lithuania +370 LT / LTU</option>
+                <option value="+352"required>Luxembourg +352 LU / LUX</option>
+                <option value="+853"required>Macau +853 MO / MAC</option>
+                <option value="+389"required>Macedonia +389 MK / MKD</option>
+                <option value="+261"required>Madagascar +261 MG / MDG</option>
+                <option value="+265"required>Malawi +265 MW / MWI</option>
+                <option value="+60"required>Malaysia +60  MY / MYS</option>
+                <option value="+223"required>Mali 223 ML / MLI</option>
+                <option value="+356"required>Malta +356 MT / MLT</option>
+                <option value="+222"required>Mauritania +222 MR / MRT</option>
+                <option value="+230"required>Mauritius +230 MU / MUS</option>
+                <option value="+262"required>Mayotte +262 YT / MYT</option>
+                <option value="+52"required>Mexico +52  MX / MEX</option>
+                <option value="+691"required>Micronesia +691 FM / FSM</option>
+                <option value="+373"required>Moldova +373 MD / MDA</option>
+                <option value="+377"required>Monaco +377 MC / MCO</option>
+                <option value="+976"required>Mongolia +976 MN / MNG</option>
+                <option value="+382"required>Montenegro +382 ME / MNE</option>
+                <option value="+1-664"required>Montserrat +1-664   MS / MSR</option>
+                <option value="+212"required>Morocco +212 MA / MAR</option>
+                <option value="+258"required>Mozambique +258 MZ / MOZ</option>
+                <option value="+95"required>Myanmar +95  MM / MMR</option>
+                <option value="+264"required>Namibia +264 NA / NAM</option>
+                <option value="+674"required>Nauru +674 NR / NRU</option>
+                <option value="+977"required>Nepal +977 NP / NPL</option>
+                <option value="+31"required>Netherlands +31  NL / NLD</option>
+                <option value="+599"required>Netherlands Antilles +599 AN / ANT</option>
+                <option value="+687"required>New Caledonia +687 NC / NCL</option>
+                <option value="+64"required>New Zealand +64  NZ / NZL</option>
+                <option value="+227"required>Niger +227 NE / NER</option>
+                <option value="+234"required>Nigeria +234 NG / NGA</option>
+                <option value="+683"required>Niue +683 NU / NIU</option>
+                <option value="+850"required>North Korea +850 KP / PRK</option>
+                <option value="+1-670required">Northern Mariana Islands +1-670   MP / MNP</option>
+                <option value="+47required">Norway +47  NO / NOR</option>
+                <option value="+968"required>Oman +968 OM / OMN</option>
+                <option value="+92"required>Pakistan +92  PK / PAK</option>
+                <option value="+680"required>Palau +680 PW / PLW</option>
+                <option value="+970"required>Palestine +970 PS / PSE</option>
+                <option value="+507"required>Panama +507 PA / PAN</option>
+                <option value="+675"required>Papua New Guinea +675 PG / PNG</option>
+                <option value="+595"required>Paraguay +595 PY / PRY</option>
+                <option value="+51"required>Peru +51  PE / PER</option>
+                <option value="+63"required>Philippines +63  PH / PHL</option>
+                <option value="+64"required>Pitcairn +64  PN / PCN</option>
+                <option value="+48"required>Poland +48  PL / POL</option>
+                <option value="+351"required>Portugal +351 PT / PRT</option>
+                <option value="+1-787"required>Puerto Rico +1-787 PR / PRI</option>
+                <option value="+1-939"required>Puerto Rico +1-939 PR / PRI</option>
+                <option value="+974"required>Qatar +974 QA / QAT</option>
+                <option value="+242"required>Republic of the Congo +242 CG / COG</option>
+                <option value="+262"required>Reunion +262 RE / REU</option>
+                <option value="+40"required>Romania +40  RO / ROU</option>
+                <option value="+7"required>Russia +7   RU / RUS</option>
+                <option value="+250"required>Rwanda +250 RW / RWA</option>
+                <option value="+590"required>Saint Barthelemy +590 BL / BLM</option>
+                <option value="+290"required>Saint Helena  +290 SH / SHN</option>
+                <option value="+1-869"required>Saint Kitts and Nevis +1-869   KN / KNA</option>
+                <option value="+1-758"required>Saint Lucia +1-758   LC / LCA</option>
+                <option value="+590"required>Saint Martin +590 MF / MAF</option>
+                <option value="+508"required>Saint Pierre and Miquelon  +508 PM / SPM</option>
+                <option value="+1-784"required>Saint Vincent and the Grenadines +1-784   VC / VCT</option>
+                <option value="+685"required>Samoa +685 WS / WSM</option>
+                <option value="+378"required>San Marino +378 SM / SMR</option>
+                <option value="+239"required>Sao Tome and Principe +239 ST / STP</option>
+                <option value="+966"required>Saudi Arabia +966 SA / SAU</option>
+                <option value="+221"required>Senegal +221 SN / SEN</option>
+                <option value="+381"required>Serbia +381 RS / SRB</option>
+                <option value="+248"required>Seychelles +248 SC / SYC</option>
+                <option value="+232"required>Sierra Leone +232 SL / SLE</option>
+                <option value="+65"required>Singapore +65  SG / SGP</option>
+                <option value="+1-721"required>Sint Maarten +1-721   SX / SXM</option>
+                <option value="+421"required>Slovakia +421 SK / SVK</option>
+                <option value="+386"required>Slovenia +386 SI / SVN</option>
+                <option value="+677"required>Solomon Islands +677 SB / SLB</option>
+                <option value="+252"required>Somalia +252 SO / SOM</option>
+                <option value="+27"required>South Africa +27  ZA / ZAF</option>
+                <option value="+82"required>South Korea +82  KR / KOR</option>
+                <option value="+211"required>South Sudan +211 SS / SSD</option>
+                <option value="+34"required>Spain +34  ES / ESP</option>
+                <option value="+94"required>Sri Lanka +94  LK / LKA</option>
+                <option value="+249"required>Sudan +249 SD / SDN</option>
+                <option value="+597"required>Suriname +597 SR / SUR</option>
+                <option value="+47"required>Svalbard and Jan Mayen +47  SJ / SJM</option>
+                <option value="+268"required>Swaziland +268 SZ / SWZ</option>
+                <option value="+46"required>Sweden +46  SE / SWE</option>
+                <option value="+41"required>Switzerland +41  CH / CHE</option>
+                <option value="+963"required>Syria +963 SY / SYR</option>
+                <option value="+886"required>Taiwan +886 TW / TWN</option>
+                <option value="+992"required>Tajikistan +992 TJ / TJK</option>
+                <option value="+255"required>Tanzania +255 TZ / TZA</option>
+                <option value="+66"required>Thailand +66  TH / THA</option>
+                <option value="+228"required>Togo +228 TG / TGO</option>
+                <option value="+690"required>Tokelau +690 TK / TKL</option>
+                <option value="+676"required>Tonga +676 TO / TON</option>
+                <option value="+1-868"required>Trinidad and Tobago +1-868   TT / TTO</option>
+                <option value="+216"required>Tunisia +216 TN / TUN</option>
+                <option value="+90"required>Turkey +90  TR / TUR</option>
+                <option value="+993"required>Turkmenistan +993 TM / TKM</option>
+                <option value="+1-649"required>Turks and Caicos Islands +1-649   TC / TCA</option>
+                <option value="+688"required>Tuvalu +688 TV / TUV</option>
+                <option value="+1-340"required>U.S. Virgin Islands +1-340   VI / VIR</option>
+                <option value="+256"required>Uganda +256 UG / UGA</option>
+                <option value="+380"required>Ukraine +380 UA / UKR</option>
+                <option value="+971"required>United Arab Emirates +971 AE / ARE</option>
+                <option value="+44"required>United Kingdom +44  GB / GBR</option>
+                <option value="+1"required>United States +1   US / USA</option>
+                <option value="+598"required>Uruguay +598 UY / URY</option>
+                <option value="+998"required>Uzbekistan +998 UZ / UZB</option>
+                <option value="+678"required>Vanuatu +678 VU / VUT</option>
+                <option value="+379"required>Vatican +379 VA / VAT</option>
+                <option value="+58"required>Venezuela +58  VE / VEN</option>
+                <option value="+84"required>Vietnam +84  VN / VNM</option>
+                <option value="+681"required>Wallis and Futuna +681 WF / WLF</option>
+                <option value="+212"required>Western Sahara +212 EH / ESH</option>
+                <option value="+967"required>Yemen +967 YE / YEM</option>
+                <option value="+260"required>Zambia +260 ZM / ZMB</option>
+                <option value="+263"required>Zimbabwe +263 ZW / ZWE</option>
+            </select>
+            <label for="number">Enter your mobile number:</label>
+            <input type="tel" id="num" name="num" required><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+            <label for="address">Enter your Nationality:</label>
+            <input type="text" id="address" name="address" required><br>
+            <label for="identification">Select your identity document:</label>
+            <select>
+                <option value="none"required >Choose from here</option>
+                <option value="aadhar"required id="doc">Aadhar card</option>
+                <option value="ration_card"required id="doc">Ration Card</option>
+                <option value="pan_card"required id="doc">Pan card</option>
+                <option value="ayushman_card"required id="doc">Aayushman card</option>
+                <option value="driving_licence"required id="doc">Driving Licence</option>
+                <option value="passport"required id="doc">Passport</option>
+            </select>
+            <label for="identification">Enter your document number:</label>
+            <input type="text" id="identification" name="identification"required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="doctorselect">Select your doctor:</label>
+            <select id="doctorselect">
+                <option value="none">Choose from here</option>
+                <option value="Dr. Pratik Shukla(Cardiologist)">Dr. Pratik Shukla(Cardiologist)</option>
+                <option value="Dr. Emily Davis(Pediatrician)">Dr. Emily Davis(Pediatrician)</option>
+                <option value="Dr. Kane Williamson(Internal medicine)">Dr. Kane Wiliiamson(Internal medicine)</option>
+                <option value="Dr. Henry Kevil(Orthopedist)">Dr. Henry Kevil(Orthopedist)</option>
+                <option value="Dr. Ferdinand Stuart(Urologist)">Dr. Ferdinand Stuart(Urologist)</option>
+                <option value="Dr. Steve Wolfe(General Practitioner)">Dr. Steve Wolfe(General Practitioner)</option>
+                <option value="Dr. Lucas Martineze(Family Medicine )">Dr. Lucas Martineze(Family Mediciner)</option>
+                <option value="Dr. Jaby Koay(General Surgeon)">Dr. Jaby Koay(General Surgeon)</option>
+                <option value="Dr. Sasuke Uchiha(Neurologist)">Dr. Sasuke Uchiha(Neurologist)</option>
+                <option value="Dr. Kabuto(Pathologist)">Dr. Kabuto(Pathologist)</option>
+                <option value="Dr. Orochimarou(Opthalmologist)">Dr. Orichimarou(Opthalmologist)</option>
+                <option value="Dr. Sharotobi Tensei(Dermatologist)">Dr. Sharotobi Tensei(Dermatologist)</option>
+                <option value="Dr. Kakashi Hatake(Psychiatrist)">Dr. Kakashi Hatake(Psychiatrist)</option>
+                <option value="Dr. Hashirama Senju(Gastroenterologist)">Dr. Hashirama Senju(Gastroenterologist)</option>
+                <option value="Dr. Gozo Satarou(Emergency Medic)">Dr. Gozo Satarou(Emergency Medic)</option>
+                <option value="Dr. Alice Sarapova(Obstetrician and Gynaecologist)">Dr. Alice Sarapova(Obstetrician and Gynaecologist)</option>
+                <option value="Dr. Bruce Banner(Anesthesiologist)">Dr. Bruce Branner(Anesthesiologist)</option>
+                <option value="Dr. Lencho Samuel(Urologist)">Dr. Lencho Samuel(Urologist)</option>
+                <option value="Dr. James Herroit(Otorhinolaryngologist)">Dr. James Herroit(Otorhinolaryngologist)</option>
+                <option value="Dr. Zehra Gunes(Surgeon)">Dr. Zehra Gunes(Surgeon)</option>
+                <option value="Dr. Geralt Trivia(Neurosurgeon)">Dr. Geralt Trivia(Neurosurgeon)</option>
+                <option value="Dr. Fanso De Caprio(Oncologist)">Dr. Fanso De Caprio(Oncologist)</option>
+                <option value="Dr. Leonardo Albatross(Orthopedist)">Dr. Leonardo Albatross(Orthopedist)</option>
+            </select>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required><br>
+            <label for="payment">Enter  your payment amount:</label>
+            <input type="number" id="payment" name="payment" required><br>
+            <center><input type="submit" value="Submit" ondblclick="msg()">
+            <!--<button onclick="msg2()">Pay</button></center>-->
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Online Hospital</p>
+    </footer>
+</body>
+</html>

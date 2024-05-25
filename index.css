@@ -1,0 +1,86 @@
+/* Add your CSS styles here */
+#heart{
+    height:40px;
+    width:auto;
+    margin:none;
+}
+#cross{
+    height:35px;
+    width:auto;
+    margin:none;
+}
+h1{
+    font-family:algerian;
+    color:#0000ff;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.4);
+    transition:0.3s;
+    font-size:50px;
+    text-align:center;
+}
+h2{
+  text-align:center;
+}
+h1:hover{
+    color:#ff0000;
+    text-shadow:4px 4px 6px rgba(0,0,0,0.6);
+}
+h1:active{
+    color:#f08804;
+    text-shadow:5px 5px 7px rgba(0,0,0,0.8);
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+eader {
+    background-color: #fff;
+    padding: 5px;
+    margin:0px;
+}
+.head{
+    color:#ff0000;
+    font-size:20px;
+}
+form {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: #008080;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #006666;
+}
+/* Add your logo as the background image for the form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #ffff url("hospital3.jpg");
+    background-size: contain;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
