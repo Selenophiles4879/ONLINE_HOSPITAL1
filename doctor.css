@@ -70,3 +70,28 @@ footer {
     padding:none;
     font-size:25px;
 }
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 20px; /* Adjusted margin for smaller screens */
+    }
+    
+    .doctor {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+    
+    .doctor img {
+        max-width: 100%; /* Ensures images are fully responsive */
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 10px; /* Further adjusted margin for smaller screens */
+    }
+    
+    #doctors {
+        max-width: 90%; /* Adjusted max-width for smaller screens */
+    }
+}
