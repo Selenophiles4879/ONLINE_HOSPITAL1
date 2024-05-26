@@ -13,6 +13,11 @@
         function msg2(){
              var paymentwin=window.open("payment.html","payment_parent","width=800px,height=400px,top=100px,left=400px");
         }
+        // Disable back button
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
     </script>
 </head>
 <body>
