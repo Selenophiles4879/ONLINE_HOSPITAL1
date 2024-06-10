@@ -1,4 +1,5 @@
-document.getElementById('logoutLink').addEventListener('click', function(event) {
+// Function to handle logout
+function handleLogout(event) {
     event.preventDefault(); // Prevent the default link behavior
 
     // Perform the logout action
@@ -9,4 +10,7 @@ document.getElementById('logoutLink').addEventListener('click', function(event) 
 
     // Redirect to the browser's home page
     window.location.href = 'about:home';
-});
+}
+
+// Attach the event listener to the logout link
+document.getElementById('logoutLink').addEventListener('click', handleLogout);
