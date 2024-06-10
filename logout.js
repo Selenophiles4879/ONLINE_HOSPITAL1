@@ -9,8 +9,7 @@ function handleLogout(event) {
     localStorage.clear();
 
     // Redirect to the browser's home page
-    window.location.href = 'about:home';
+    window.location.href = 'about:blank';
 }
-
 // Attach the event listener to the logout link
 document.getElementById('logoutLink').addEventListener('click', handleLogout);
